@@ -54,7 +54,7 @@ const Trip=()=>{
         }
         querypopular()
         async function query2(){
-          const genAI = new GoogleGenerativeAI("AIzaSyAP8VnDZXqx1hfQ5wJOzyuhjTNl3PdHbx8");
+          const genAI = new GoogleGenerativeAI();
           const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
           const prompt = `Describe cultural heritage of ${to} with refernce to ${v1} in 50 words`;
           const chat = model.startChat({
