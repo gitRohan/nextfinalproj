@@ -6,7 +6,7 @@ import type {Marker} from '@googlemaps/markerclusterer';
 type Poi ={ key: string, location: google.maps.LatLngLiteral ,zIndex:number}
 
 export const MapElement=({Poi1,cityprops}:{Poi1:Poi[],cityprops:{lat:number,long:number}})=>{
-    const apiKey="AIzaSyDItL5Twjd22_r8j9nRWW8VXdAeE3UlUVo";
+    const apiKey="";
     const [latlng1, setlatlng1] = useState<google.maps.LatLngLiteral>({ lat: 0, lng: 0 });
     const [selectedId, setSelectedId] = useState<string | null>(null);
     const [hoverId, setHoverId] = useState<string | null>(null);
