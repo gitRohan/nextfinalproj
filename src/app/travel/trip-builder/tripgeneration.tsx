@@ -39,7 +39,7 @@ const Trip=()=>{
     let v1="";
     useEffect(()=>{
         async function querypopular() {
-          const genAI = new GoogleGenerativeAI("env");
+          const genAI = new GoogleGenerativeAI();
           const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
           const prompt = `Give the list of 5 popular tourist locations of ${to}} just give names and no bulletines`;
           const chat = model.startChat({
@@ -65,7 +65,7 @@ const Trip=()=>{
         }
         query2()
         async function query(){
-          const genAI = new GoogleGenerativeAI("AIzaSyAP8VnDZXqx1hfQ5wJOzyuhjTNl3PdHbx8");
+          const genAI = new GoogleGenerativeAI();
           const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
           const prompt = `Create a trip to ${to} from ${date?date.from?.getDate():null} to ${date?date.to?.getDate():null} for ${trip} and having ${selectedTags.join(",")} include ${selectedDest?.join(",")}`;
           const chat = model.startChat({
