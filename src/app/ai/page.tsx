@@ -12,7 +12,7 @@ const Page=()=>{
             "https://api-inference.huggingface.co/models/google/gemma-2-2b-it",
             {
                 headers: {
-                    Authorization: "Bearer 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",
+                    Authorization: "",
                     "Content-Type": "application/json",
                 },
                 method: "POST",
