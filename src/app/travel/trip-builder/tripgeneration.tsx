@@ -39,7 +39,7 @@ const Trip=()=>{
     let v1="";
     useEffect(()=>{
         async function querypopular() {
-          const genAI = new GoogleGenerativeAI("AIzaSyAP8VnDZXqx1hfQ5wJOzyuhjTNl3PdHbx8");
+          const genAI = new GoogleGenerativeAI("env");
           const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
           const prompt = `Give the list of 5 popular tourist locations of ${to}} just give names and no bulletines`;
           const chat = model.startChat({
