@@ -38,7 +38,7 @@ const Page=async({searchParams}:{searchParams: Promise<{ intent: string ,success
             <DashboardPage cta={<CreateEventCategoryModal>
                 <Button>
                     <PlusIcon className="size-4 mr-2"/>
-                    Add Category
+                    Add Trips
                 </Button>
             </CreateEventCategoryModal>} title="Dashboard">
             <DashboardPageContent/>
